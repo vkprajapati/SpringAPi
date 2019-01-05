@@ -44,7 +44,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter{
 	public AuthenticationFilter getAuthenticationFilter() throws Exception{
 		
 		final AuthenticationFilter filter = new AuthenticationFilter(authenticationManager());
-		filter.setFilterProcessesUrl("/gyftx/login");
+		filter.setFilterProcessesUrl("/user/login");
 		return filter;
 	}
 }
